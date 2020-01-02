@@ -1,33 +1,18 @@
 <html>
 <head>
 	<title>IIT(ISM) Newsroom</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://use.fontawesome.com/5144f789fd.js"></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  
 
-
-<style type="text/css">
-	*{
-		margin: 0;
-		padding:0;
-		font-family: 'Josefin Sans', sans-serif;
-		position: relative;
-	}
-	/*make the image fully responsive*/
-	.carousel-inner img{
-		height: 100%;
-		width: 100%;
-	}
-
-
-</style>
 </head>
 <!-- the scrollable area -->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<header>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="wrapper">
 	<header>
 		<nav class="navbar navbar-inverse bg-primary">
   <div class="container-fluid">
@@ -47,9 +32,10 @@
       	<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-envelope"></span> Contact Us                     <span class="caret"></span></a>
           <ul class="dropdown-menu ml-30px">
-            <li><a href="https://www.facebook.com/IITISMDHNB/">Facebook</a></li>
-            <li><a href="https://twitter.com/iitism_dhanbad">Twitter</a></li>
-            <li><a href="https://in.linkedin.com/school/iitism/?trk=similar-pages_result-card_full-click">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/IITISMDHNB/"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+            <li><a href="https://twitter.com/iitism_dhanbad"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+            <li><a href="https://in.linkedin.com/school/iitism/?trk=similar-pages_result-card_full-click"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            LinkedIn</a></li>
             <!-- <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li role="separator" class="divider"></li>
@@ -62,12 +48,8 @@
     </div>
   </div>
 </nav>
-<!-- <ol class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
-</ol> -->
 </header>
+<!-- carousel -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -110,6 +92,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<!-- scrollspy -->
  <div data-spy="scroll" data-target="#myNavbar" data-offset="50">
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
 <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -125,7 +108,7 @@
     </li>
   </ul>
 </nav> -->
- <nav id="myNavbar" class="navbar navbar-expand-md navbar-inverse bg-light fixed-top">
+ <nav id="scrollspy" class="navbar navbar-expand-md navbar-inverse bg-light">
         <div class="container">
             <a href="#" class="navbar-brand">Newsroom</a>
             <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -139,10 +122,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-            <div class="collapse navbar-collapse" id="scrollspy">
+            <div class="collapse navbar-collapse navbar-fixed top-sticky" id="scrollspy">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a href="#clubs" class="nav-link">Clubs</a>
+                        <a href="#Clubs" class="nav-link">Clubs</a>
                     </li>
                     <li class="nav-item">
                         <a href="#student-chapter" class="nav-link">Student Chapter</a>
@@ -163,14 +146,16 @@
                     </li> -->
                 </ul>
             </div>
-        </div>
-    </nav>
+            </div>
+          </nav>
+    
 
 
 <!-- Section 1 -->
 <div id="Clubs">
+
 <section>
-	<div class="container-fluid bg-warning">
+	<div class="container-fluid" style="background-color: #ff652f;">
 		<h1 class="text-center text-capitalize pt-50">clubs</h1>
 		<hr class="w-25 mx-auto pt-5">
 		<h5>
@@ -309,7 +294,7 @@
 </div>
 <hr class="w-25 mx-auto pt-5">
 <br><br><br>
-
+<button type="button" class=" clubs btn btn-outline-primary text-center">MORE</button>
 
 </section>
 </div>
@@ -319,7 +304,7 @@
 <!-- Section 2 -->
 <div id="student-chapter">
 <section>
-	<div class="container-fluid bg-success">
+	<div class="container-fluid" style="background-color:#ffe400">
 		<h1 class="text-center text-capitalize pt-50">student chapter</h1>
 		<hr class="w-25 mx-auto pt-5">
 		<h5>
@@ -460,7 +445,7 @@
 <!-- Section 3 -->
 <div id="downloads">
 <section>
-	<div class="container-fluid bg-primary">
+	<div class="container-fluid" style="background-color: #14a76c;">
 		<h1 class="text-center text-capitalize pt-50">downloads</h1>
 		<hr class="w-25 mx-auto pt-5">
 	<div class="list-group">
@@ -479,39 +464,116 @@
 </div>
 <!-- div for scrollspy -->
 
-<p >
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<footer>
+  <div class="row">
+      <div class="col-lg-12">
+<div class="col-lg-3 col-md-6">
+      <div class="container">
 
+
+<div class="col-lg-3">
+  <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+
+      <img src="about.png" class="img-responsive" alt="">
+
+  <div class="caption">
+    <div class="blur"></div>
+    <div class="caption-text">
+      <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">About</h3>
+      <p>Newsroom website is a source to
+        read the latest News
+        based on the clubs and the student
+        chapters of the college. One
+        is required to subscribe first and
+        select the clubs or chapters
+        he or she wants to enrolled in.
+        </p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="col-lg-3">
+  <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+  <div class="caption">
+    <div class="blur"></div>
+    <div class="caption-text">
+      <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Privacy Policy</h3>
+      <p>Newsroom operates the https://newsroombyabhi.000webhostapp.com/.
+
+        This page informs you of our policies regarding the collection, use, and 
+        disclosure of personal data when you use our Service and the choices you have 
+        associated with that data. 
+       </p>
+    </div>
+  </div>
+</div>
+
+</div>
+  
+
+  <div class="col-lg-2 col-md-6">
+<h3>Categories:</h3>
+      <ul>
+<li><a href="#Clubs">Clubs</a></li>
+<li><a href="#student-chapter">Student Chapter</a></li>
+<li><a href="#downloads">Downloads</a></li>
+
+</ul>
+  </div>
+
+  <div class="col-lg-4 col-md-6">
+      <h3> Developer Info</h3>
+<p>Abhishek Kumar Jain,19JE0032, Bachelor of Technology in Computer Science And Engineering
+</p>
+  <h3>Developer Contact</h3>
+
+
+
+<a href="https://github.com/abhi-dot"  target="_blank" title="GitHub"><span class="fa-stack fa-lg">
+<i class="fa fa-square-o fa-stack-2x"></i>
+<i class="fa fa-github fa-stack-1x"></i>
+</span>
+GitHub
+<a href="https://www.facebook.com/profile.php?id=100011062030626/"  target="_blank" title="Facebook"><span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-facebook fa-stack-1x"></i>
+  </span>
+  Facebook</a>
+  <a href="mailto:a0000000j000@gmail.com"  target="_blank" title="Mail"><span class="fa-stack fa-lg">
+    <i class="fa fa-square-o fa-stack-2x"></i>
+    <i class="fa fa-envelope fa-stack-1x"></i>
+    </span>
+    Mail</a>
+
+
+
+
+
+</div>
+<br/>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<div class="g-plusone" data-annotation="inline" data-width="300" data-href=""></div>
+
+<!-- Helyezd el ezt a címkét az utolsó +1 gomb címke mögé. -->
+<script type="text/javascript">
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/platform.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
 
 
 
@@ -519,6 +581,21 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
 	
+<script>
+window.onscroll=function(){
+  myFunction();
+}
+var header=
+document.getElementById("scrollspy");
+var sticky=scollspy.offsetTop;
+function myFunction(){
+  if(window.pageYOffset>sticky){
+    scrollspy.classList.add("sticky");
+  }
+  else{
+      scrollspy.classList.remove("sticky");
+  }
+}
 </script>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
