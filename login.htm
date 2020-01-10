@@ -1,117 +1,188 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="a class="vglnk" href="bootstrap.min.css" rel="nofollow"><span>https</span><span>://</span><span>stackpath</span><span>.</span><span>bootstrapcdn</span><span>.</span><span>com</span><span>/</span><span>bootstrap</span><span>/</span><span>4</span><span>.</span><span>2</span><span>.</span><span>1</span><span>/</span><span>css</span><span>/</span><span>bootstrap</span><span>.</span><span>min</span><span>.</span><span>css</span></a>" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
- 
-    <title>login</title>
-  </head>
-  <body>
- <div class="container mt-2 mb-4">
-  <div class="col-sm-8 ml-auto mr-auto">
-    <ul class="nav nav-pills nav-fill mb-1" id="pills-tab" role="tablist">
-      <li class="nav-item"> <a class="nav-link active" id="pills-signin-tab" data-toggle="pill" href="#pills-signin" role="tab" aria-controls="pills-signin" aria-selected="true">Sign In</a> </li>
-      <li class="nav-item"> <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false">Sign Up</a> </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-signin" role="tabpanel" aria-labelledby="pills-signin-tab">
-        <div class="col-sm-12 border border-primary shadow rounded pt-2">
-          <div class="text-center"><img src="https://placehold.it/80x80" class="rounded-circle border p-1"></div>
-          <form method="post" id="singninFrom">
-            <div class="form-group">
-              <label class="font-weight-bold">Email <span class="text-danger">*</span></label>
-              <input type="email" name="email" id="email" class="form-control" placeholder="Enter valid email" required>
-            </div>
-            <div class="form-group">
-              <label class="font-weight-bold">Password <span class="text-danger">*</span></label>
-              <input type="password" name="password" id="password" class="form-control" placeholder="***********" required>
-            </div>
-            <div class="form-group">
-              <div class="row">
-                <div class="col">
-                  <label><input type="checkbox" name="condition" id="condition"> Remember me.</label>
-                </div>
-                <div class="col text-right"> <a href="javascript:;" data-toggle="modal" data-target="#forgotPass">Forgot Password?</a> </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="submit" name="submit" value="Sign In" class="btn btn-block btn-primary">
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
-        <div class="col-sm-12 border border-primary shadow rounded pt-2">
-          <div class="text-center"><img src="https://placehold.it/80x80" class="rounded-circle border p-1"></div>
-          <form method="post" id="singnupFrom">
-            <div class="form-group">
-              <label class="font-weight-bold">Email <span class="text-danger">*</span></label>
-              <input type="email" name="signupemail" id="signupemail" class="form-control" placeholder="Enter valid email" required>
-            </div>
-            <div class="form-group">
-              <label class="font-weight-bold">User Name <span class="text-danger">*</span></label>
-              <input type="text" name="signupusername" id="signupusername" class="form-control" placeholder="Choose your user name" required>
-              <div class="text-danger"><em>This will be your login name!</em></div>
-            </div>
-            <div class="form-group">
-              <label class="font-weight-bold">Phone #</label>
-              <input type="text" name="signupphone" id="signupphone" class="form-control" placeholder="(000)-(0000000)">
-            </div>
-            <div class="form-group">
-              <label class="font-weight-bold">Password <span class="text-danger">*</span></label>
-              <input type="password" name="signuppassword" id="signuppassword" class="form-control" placeholder="***********" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;"
-                required>
-            </div>
-            <div class="form-group">
-              <label class="font-weight-bold">Confirm Password <span class="text-danger">*</span></label>
-              <input type="password" name="signupcpassword" id="signupcpassword" class="form-control" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="***********" required>
-            </div>
-            <div class="form-group">
-              <label><input type="checkbox" name="signupcondition" id="signupcondition" required> I agree with the <a href="javascript:;">Terms &amp; Conditions</a> for Registration.</label>
-            </div>
-            <div class="form-group">
-              <input type="submit" name="signupsubmit" value="Sign Up" class="btn btn-block btn-primary">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+    <title>
+      login page
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 
-  <!-- Modal -->
-  <div class="modal fade" id="forgotPass" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <form method="post" id="forgotpassForm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Forgot Password</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-          </div>
-          <div class="modal-body">
-            <div class="form-group">
-              <label>Email <span class="text-danger">*</span></label>
-              <input type="email" name="forgotemail" id="forgotemail" class="form-control" placeholder="Enter your valid email..." required>
-            </div>
-            <div class="form-group">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sign In</button>
-            <button type="submit" name="forgotPass" class="btn btn-primary"><i class="fa fa-envelope"></i> Send Request</button>
-          </div>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+body{
+  background-image: url(images/login.jpg);
+  width: 100%;
+  height: 100%;
+}
+</style>
+   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script> 
+
+</head>
+  <body>
+    <div class="container">    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="loginform" class="form-horizontal" role="form">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="email">                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                    </div>
+                                    
+
+                                
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                        <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Login</button>
+                                      <!-- <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a> -->
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Don't have an account! 
+                                        <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                            Sign Up Here
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </form>     
+
+
+
+                        </div>                     
+                    </div>  
         </div>
-      </form>
+        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%;color:black; position: relative; top:-10px">Already have an account? <a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form" >
+                                
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                    
+                                
+                                  
+                              
+                                    
+                                <div class="form-group">
+                                    <label for="firstname"  class="col-md-3 control-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="firstname"  class="form-control" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname"  class="col-md-3 control-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="email" class="col-md-3 control-label">Email</label>
+                                  <div class="col-md-9">
+                                      <input type="text"  id = "email" class="form-control" name="email" placeholder="Email Address">
+                                  </div>
+                              </div>
+                                <div class="form-group">
+                                  <label for="whatsapp"  class="col-md-3 control-label">Whatsapp No.</label>
+                                  <div class="col-md-9">
+                                      <input type="text" id = "whatsapp" class="form-control" name="whatsapp" placeholder="Whatsapp Number">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="admission" class="col-md-3 control-label">Admission No.</label>
+                                <div class="col-md-9">
+                                    <input type="text" id= "admission" class="form-control" name="admission" placeholder="Admission No.">
+                                </div>
+                            </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" id = "password" class="form-control" name="passwd" placeholder="Password">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                       
+                                    </div>
+                                </div>
+                                
+                          
+                                
+                                
+                                
+                            </form>
+                         </div>
+                    </div>
+
+               
+               
+                
+         </div> 
     </div>
-  </div>
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="<a class="vglnk" href="https://code.jquery.com/jquery-3.3.1.slim.min.js" rel="nofollow"><span>https</span><span>://</span><span>code</span><span>.</span><span>jquery</span><span>.</span><span>com</span><span>/</span><span>jquery</span><span>-</span><span>3</span><span>.</span><span>3</span><span>.</span><span>1</span><span>.</span><span>slim</span><span>.</span><span>min</span><span>.</span><span>js</span></a>" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="<a class="vglnk" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" rel="nofollow"><span>https</span><span>://</span><span>cdnjs</span><span>.</span><span>cloudflare</span><span>.</span><span>com</span><span>/</span><span>ajax</span><span>/</span><span>libs</span><span>/</span><span>popper</span><span>.</span><span>js</span><span>/</span><span>1</span><span>.</span><span>14</span><span>.</span><span>6</span><span>/</span><span>umd</span><span>/</span><span>popper</span><span>.</span><span>min</span><span>.</span><span>js</span></a>" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="<a class="vglnk" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" rel="nofollow"><span>https</span><span>://</span><span>stackpath</span><span>.</span><span>bootstrapcdn</span><span>.</span><span>com</span><span>/</span><span>bootstrap</span><span>/</span><span>4</span><span>.</span><span>2</span><span>.</span><span>1</span><span>/</span><span>js</span><span>/</span><span>bootstrap</span><span>.</span><span>min</span><span>.</span><span>js</span></a>" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+    
+
+
+    
+    
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+
+
+
+
+ <script src="mai.js"></script>   
   </body>
 </html>

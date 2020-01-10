@@ -1,0 +1,1525 @@
+<html>
+    <head>
+        <title>
+            SIGNED In
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+
+       
+    <!------ Include the above in your HEAD tag ---------->
+  
+<script src="https://use.fontawesome.com/5144f789fd.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<style>
+    .profile{
+        border: none;
+        background-color: black;
+        color: white;
+
+    }
+    #sidebar-wrapper{
+        position: fixed;
+        margin-top: 55px;
+    }
+    .fb-post{
+        margin-left: 50px !important;
+        max-width: 500px  !important;
+    }
+
+ body {
+    direction: rtl;
+    text-align:right;
+    color: #272727;
+    background-color: blanchedalmond;
+
+}
+.page-content-wrapper{
+    padding-top: 100px;
+}
+.navbar{
+	background-color:#ffe400 !important;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+
+}
+
+dd {
+    margin-right: 0;
+}
+
+figure {
+    margin: 0 0 1rem;
+}
+
+caption {
+    text-align: right;
+}
+
+th {
+    text-align: right;
+}
+
+.list-unstyled {
+    padding-right: 0;
+}
+
+.list-inline {
+    padding-right: 0;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.blockquote {
+    border-left: none;
+    border-right: 0.25rem solid #eceeef;
+}
+
+.blockquote-reverse {
+    padding-left: 1rem;
+    padding-right: 0;
+    text-align: left;
+    border-left: 0.25rem solid #eceeef;
+    border-right: 0;
+}
+
+dl.row > dd + dt {
+    clear: right;
+}
+
+
+.pull-0 {
+    left: auto;
+}
+
+.pull-1 {
+    left: 8.33333%;
+}
+
+.pull-2 {
+    left: 16.66667%;
+}
+
+.pull-3 {
+    left: 25%;
+}
+
+.pull-4 {
+    left: 33.33333%;
+}
+
+.pull-5 {
+    left: 41.66667%;
+}
+
+.pull-6 {
+    left: 50%;
+}
+
+.pull-7 {
+    left: 58.33333%;
+}
+
+.pull-8 {
+    left: 66.66667%;
+}
+
+.pull-9 {
+    left: 75%;
+}
+
+.pull-10 {
+    left: 83.33333%;
+}
+
+.pull-11 {
+    left: 91.66667%;
+}
+
+.pull-12 {
+    left: 100%;
+}
+
+.push-0 {
+    right: auto;
+}
+
+.push-1 {
+    right: 8.33333%;
+}
+
+.push-2 {
+    right: 16.66667%;
+}
+
+.push-3 {
+    right: 25%;
+}
+
+.push-4 {
+    right: 33.33333%;
+}
+
+.push-5 {
+    right: 41.66667%;
+}
+
+.push-6 {
+    right: 50%;
+}
+
+.push-7 {
+    right: 58.33333%;
+}
+
+.push-8 {
+    right: 66.66667%;
+}
+
+.push-9 {
+    right: 75%;
+}
+
+.push-10 {
+    right: 83.33333%;
+}
+
+.push-11 {
+    right: 91.66667%;
+}
+
+.push-12 {
+    right: 100%;
+}
+
+.offset-1 {
+    margin-right: 8.33333%;
+}
+
+.offset-2 {
+    margin-right: 16.66667%;
+}
+
+.offset-3 {
+    margin-right: 25%;
+}
+
+.offset-4 {
+    margin-right: 33.33333%;
+}
+
+.offset-5 {
+    margin-right: 41.66667%;
+}
+
+.offset-6 {
+    margin-right: 50%;
+}
+
+.offset-7 {
+    margin-right: 58.33333%;
+}
+
+.offset-8 {
+    margin-right: 66.66667%;
+}
+
+.offset-9 {
+    margin-right: 75%;
+}
+
+.offset-10 {
+    margin-right: 83.33333%;
+}
+
+.offset-11 {
+    margin-right: 91.66667%;
+}
+
+@media (min-width: 544px) {
+
+    .pull-sm-0 {
+        left: auto;
+    }
+
+    .pull-sm-1 {
+        left: 8.33333%;
+    }
+
+    .pull-sm-2 {
+        left: 16.66667%;
+    }
+
+    .pull-sm-3 {
+        left: 25%;
+    }
+
+    .pull-sm-4 {
+        left: 33.33333%;
+    }
+
+    .pull-sm-5 {
+        left: 41.66667%;
+    }
+
+    .pull-sm-6 {
+        left: 50%;
+    }
+
+    .pull-sm-7 {
+        left: 58.33333%;
+    }
+
+    .pull-sm-8 {
+        left: 66.66667%;
+    }
+
+    .pull-sm-9 {
+        left: 75%;
+    }
+
+    .pull-sm-10 {
+        left: 83.33333%;
+    }
+
+    .pull-sm-11 {
+        left: 91.66667%;
+    }
+
+    .pull-sm-12 {
+        left: 100%;
+    }
+
+    .push-sm-0 {
+        right: auto;
+    }
+
+    .push-sm-1 {
+        right: 8.33333%;
+    }
+
+    .push-sm-2 {
+        right: 16.66667%;
+    }
+
+    .push-sm-3 {
+        right: 25%;
+    }
+
+    .push-sm-4 {
+        right: 33.33333%;
+    }
+
+    .push-sm-5 {
+        right: 41.66667%;
+    }
+
+    .push-sm-6 {
+        right: 50%;
+    }
+
+    .push-sm-7 {
+        right: 58.33333%;
+    }
+
+    .push-sm-8 {
+        right: 66.66667%;
+    }
+
+    .push-sm-9 {
+        right: 75%;
+    }
+
+    .push-sm-10 {
+        right: 83.33333%;
+    }
+
+    .push-sm-11 {
+        right: 91.66667%;
+    }
+
+    .push-sm-12 {
+        right: 100%;
+    }
+
+    .offset-sm-0 {
+        margin-right: 0%;
+    }
+
+    .offset-sm-1 {
+        margin-right: 8.33333%;
+    }
+
+    .offset-sm-2 {
+        margin-right: 16.66667%;
+    }
+
+    .offset-sm-3 {
+        margin-right: 25%;
+    }
+
+    .offset-sm-4 {
+        margin-right: 33.33333%;
+    }
+
+    .offset-sm-5 {
+        margin-right: 41.66667%;
+    }
+
+    .offset-sm-6 {
+        margin-right: 50%;
+    }
+
+    .offset-sm-7 {
+        margin-right: 58.33333%;
+    }
+
+    .offset-sm-8 {
+        margin-right: 66.66667%;
+    }
+
+    .offset-sm-9 {
+        margin-right: 75%;
+    }
+
+    .offset-sm-10 {
+        margin-right: 83.33333%;
+    }
+
+    .offset-sm-11 {
+        margin-right: 91.66667%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .pull-md-0 {
+        left: auto;
+    }
+
+    .pull-md-1 {
+        left: 8.33333%;
+    }
+
+    .pull-md-2 {
+        left: 16.66667%;
+    }
+
+    .pull-md-3 {
+        left: 25%;
+    }
+
+    .pull-md-4 {
+        left: 33.33333%;
+    }
+
+    .pull-md-5 {
+        left: 41.66667%;
+    }
+
+    .pull-md-6 {
+        left: 50%;
+    }
+
+    .pull-md-7 {
+        left: 58.33333%;
+    }
+
+    .pull-md-8 {
+        left: 66.66667%;
+    }
+
+    .pull-md-9 {
+        left: 75%;
+    }
+
+    .pull-md-10 {
+        left: 83.33333%;
+    }
+
+    .pull-md-11 {
+        left: 91.66667%;
+    }
+
+    .pull-md-12 {
+        left: 100%;
+    }
+
+    .push-md-0 {
+        right: auto;
+    }
+
+    .push-md-1 {
+        right: 8.33333%;
+    }
+
+    .push-md-2 {
+        right: 16.66667%;
+    }
+
+    .push-md-3 {
+        right: 25%;
+    }
+
+    .push-md-4 {
+        right: 33.33333%;
+    }
+
+    .push-md-5 {
+        right: 41.66667%;
+    }
+
+    .push-md-6 {
+        right: 50%;
+    }
+
+    .push-md-7 {
+        right: 58.33333%;
+    }
+
+    .push-md-8 {
+        right: 66.66667%;
+    }
+
+    .push-md-9 {
+        right: 75%;
+    }
+
+    .push-md-10 {
+        right: 83.33333%;
+    }
+
+    .push-md-11 {
+        right: 91.66667%;
+    }
+
+    .push-md-12 {
+        right: 100%;
+    }
+
+    .offset-md-0 {
+        margin-right: 0%;
+    }
+
+    .offset-md-1 {
+        margin-right: 8.33333%;
+    }
+
+    .offset-md-2 {
+        margin-right: 16.66667%;
+    }
+
+    .offset-md-3 {
+        margin-right: 25%;
+    }
+
+    .offset-md-4 {
+        margin-right: 33.33333%;
+    }
+
+    .offset-md-5 {
+        margin-right: 41.66667%;
+    }
+
+    .offset-md-6 {
+        margin-right: 50%;
+    }
+
+    .offset-md-7 {
+        margin-right: 58.33333%;
+    }
+
+    .offset-md-8 {
+        margin-right: 66.66667%;
+    }
+
+    .offset-md-9 {
+        margin-right: 75%;
+    }
+
+    .offset-md-10 {
+        margin-right: 83.33333%;
+    }
+
+    .offset-md-11 {
+        margin-right: 91.66667%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .pull-lg-0 {
+        left: auto;
+    }
+
+    .pull-lg-1 {
+        left: 8.33333%;
+    }
+
+    .pull-lg-2 {
+        left: 16.66667%;
+    }
+
+    .pull-lg-3 {
+        left: 25%;
+    }
+
+    .pull-lg-4 {
+        left: 33.33333%;
+    }
+
+    .pull-lg-5 {
+        left: 41.66667%;
+    }
+
+    .pull-lg-6 {
+        left: 50%;
+    }
+
+    .pull-lg-7 {
+        left: 58.33333%;
+    }
+
+    .pull-lg-8 {
+        left: 66.66667%;
+    }
+
+    .pull-lg-9 {
+        left: 75%;
+    }
+
+    .pull-lg-10 {
+        left: 83.33333%;
+    }
+
+    .pull-lg-11 {
+        left: 91.66667%;
+    }
+
+    .pull-lg-12 {
+        left: 100%;
+    }
+
+    .push-lg-0 {
+        right: auto;
+    }
+
+    .push-lg-1 {
+        right: 8.33333%;
+    }
+
+    .push-lg-2 {
+        right: 16.66667%;
+    }
+
+    .push-lg-3 {
+        right: 25%;
+    }
+
+    .push-lg-4 {
+        right: 33.33333%;
+    }
+
+    .push-lg-5 {
+        right: 41.66667%;
+    }
+
+    .push-lg-6 {
+        right: 50%;
+    }
+
+    .push-lg-7 {
+        right: 58.33333%;
+    }
+
+    .push-lg-8 {
+        right: 66.66667%;
+    }
+
+    .push-lg-9 {
+        right: 75%;
+    }
+
+    .push-lg-10 {
+        right: 83.33333%;
+    }
+
+    .push-lg-11 {
+        right: 91.66667%;
+    }
+
+    .push-lg-12 {
+        right: 100%;
+    }
+
+    .offset-lg-0 {
+        margin-right: 0%;
+    }
+
+    .offset-lg-1 {
+        margin-right: 8.33333%;
+    }
+
+    .offset-lg-2 {
+        margin-right: 16.66667%;
+    }
+
+    .offset-lg-3 {
+        margin-right: 25%;
+    }
+
+    .offset-lg-4 {
+        margin-right: 33.33333%;
+    }
+
+    .offset-lg-5 {
+        margin-right: 41.66667%;
+    }
+
+    .offset-lg-6 {
+        margin-right: 50%;
+    }
+
+    .offset-lg-7 {
+        margin-right: 58.33333%;
+    }
+
+    .offset-lg-8 {
+        margin-right: 66.66667%;
+    }
+
+    .offset-lg-9 {
+        margin-right: 75%;
+    }
+
+    .offset-lg-10 {
+        margin-right: 83.33333%;
+    }
+
+    .offset-lg-11 {
+        margin-right: 91.66667%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .pull-xl-0 {
+        left: auto;
+    }
+
+    .pull-xl-1 {
+        left: 8.33333%;
+    }
+
+    .pull-xl-2 {
+        left: 16.66667%;
+    }
+
+    .pull-xl-3 {
+        left: 25%;
+    }
+
+    .pull-xl-4 {
+        left: 33.33333%;
+    }
+
+    .pull-xl-5 {
+        left: 41.66667%;
+    }
+
+    .pull-xl-6 {
+        left: 50%;
+    }
+
+    .pull-xl-7 {
+        left: 58.33333%;
+    }
+
+    .pull-xl-8 {
+        left: 66.66667%;
+    }
+
+    .pull-xl-9 {
+        left: 75%;
+    }
+
+    .pull-xl-10 {
+        left: 83.33333%;
+    }
+
+    .pull-xl-11 {
+        left: 91.66667%;
+    }
+
+    .pull-xl-12 {
+        left: 100%;
+    }
+
+    .push-xl-0 {
+        right: auto;
+    }
+
+    .push-xl-1 {
+        right: 8.33333%;
+    }
+
+    .push-xl-2 {
+        right: 16.66667%;
+    }
+
+    .push-xl-3 {
+        right: 25%;
+    }
+
+    .push-xl-4 {
+        right: 33.33333%;
+    }
+
+    .push-xl-5 {
+        right: 41.66667%;
+    }
+
+    .push-xl-6 {
+        right: 50%;
+    }
+
+    .push-xl-7 {
+        right: 58.33333%;
+    }
+
+    .push-xl-8 {
+        right: 66.66667%;
+    }
+
+    .push-xl-9 {
+        right: 75%;
+    }
+
+    .push-xl-10 {
+        right: 83.33333%;
+    }
+
+    .push-xl-11 {
+        right: 91.66667%;
+    }
+
+    .push-xl-12 {
+        right: 100%;
+    }
+
+    .offset-xl-0 {
+        margin-right: 0%;
+    }
+
+    .offset-xl-1 {
+        margin-right: 8.33333%;
+    }
+
+    .offset-xl-2 {
+        margin-right: 16.66667%;
+    }
+
+    .offset-xl-3 {
+        margin-right: 25%;
+    }
+
+    .offset-xl-4 {
+        margin-right: 33.33333%;
+    }
+
+    .offset-xl-5 {
+        margin-right: 41.66667%;
+    }
+
+    .offset-xl-6 {
+        margin-right: 50%;
+    }
+
+    .offset-xl-7 {
+        margin-right: 58.33333%;
+    }
+
+    .offset-xl-8 {
+        margin-right: 66.66667%;
+    }
+
+    .offset-xl-9 {
+        margin-right: 75%;
+    }
+
+    .offset-xl-10 {
+        margin-right: 83.33333%;
+    }
+
+    .offset-xl-11 {
+        margin-right: 91.66667%;
+    }
+}
+
+.form-check-label {
+    padding-right: 1.25rem;
+}
+
+.form-check-input {
+    margin-right: -1.25rem;
+}
+
+.form-check-inline {
+    padding-right: 1.25rem;
+}
+
+    .form-check-inline + .form-check-inline {
+        margin-right: .75rem;
+    }
+
+.form-control-feedback {
+    margin-top: 0.25rem;
+}
+
+.form-control-success,
+.form-control-warning,
+.form-control-danger {
+    padding-left: 2.25rem;
+    background-position: center right 0.625rem;
+}
+
+.form-inline .form-check-label {
+    padding-right: 0;
+}
+
+.dropdown-toggle::after {
+    margin-right: 0.3em;
+}
+
+.dropdown-menu {
+    right: 0;
+    float: right;
+    margin: 2px 0 0;
+    text-align: right;
+}
+
+.dropdown-divider {
+    margin: 0.5rem 0;
+}
+
+
+
+.btn-group .btn + .btn,
+.btn-group .btn + .btn-group,
+.btn-group .btn-group + .btn,
+.btn-group .btn-group + .btn-group {
+    margin-right: -1px;
+}
+
+.btn-toolbar {
+    margin-right: -0.5rem;
+}
+
+
+
+    .btn-toolbar > .btn,
+    .btn-toolbar > .btn-group,
+    .btn-toolbar > .input-group {
+        margin-right: 0.5rem;
+    }
+
+.btn-group > .btn:first-child {
+    margin-right: 0;
+}
+
+.btn-group > .btn-group {
+    float: right;
+}
+
+.btn + .dropdown-toggle-split::after {
+    margin-right: 0;
+}
+
+
+.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn-group,
+.btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn-group + .btn-group {
+    margin-right: 0;
+}
+
+.input-group .form-control {
+    float: left;
+}
+
+.input-group-addon:not(:last-child) {
+    border-right: 1px solid rgba(0,0,0,.15);
+    border-left: 0;
+}
+
+.form-control + .input-group-addon:not(:first-child) {
+    border-left-width: medium;
+    border-right: 0;
+}
+
+
+
+.input-group-btn > .btn + .btn {
+    margin-right: -1px;
+}
+
+.input-group-btn:not(:last-child) > .btn,
+.input-group-btn:not(:last-child) > .btn-group {
+    margin-left: -1px;
+}
+
+.input-group-btn:not(:first-child) > .btn,
+.input-group-btn:not(:first-child) > .btn-group {
+    margin-right: -1px;
+}
+
+.custom-control {
+    padding-right: 1.5rem;
+}
+
+    .custom-control + .custom-control {
+        margin-right: 1rem;
+    }
+
+.custom-control-indicator {
+    right: 0;
+}
+
+.custom-controls-stacked .custom-control + .custom-control {
+    margin-right: 0;
+}
+
+.custom-select {
+    padding-left: 0.75rem \9;
+}
+
+.nav {
+    padding-right: 0;
+}
+
+
+
+    .nav-tabs .nav-item + .nav-item {
+        margin-right: 0.2rem;
+    }
+
+
+
+    .nav-pills .nav-item + .nav-item {
+        margin-right: 0.2rem;
+    }
+
+.nav-stacked .nav-item + .nav-item {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+.navbar-nav .nav-link + .nav-link {
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-item + .nav-item {
+    margin-right: 1rem;
+}
+
+@media (max-width: 543px) {
+    .navbar-toggleable .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-toggleable-sm .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-toggleable-md .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+}
+
+.card-link + .card-link {
+    margin-right: 1.25rem;
+}
+
+.card-blockquote {
+    border-right: 0;
+}
+
+.breadcrumb-item {
+    float: right;
+}
+
+.pagination {
+    padding-right: 0;
+}
+
+.page-item:first-child .page-link {
+    margin-right: 0;
+}
+
+.page-link {
+
+    margin-right: -1px;
+}
+
+.alert-dismissible {
+    padding-left: 2rem;
+}
+
+    .alert-dismissible .close {
+        left: -1rem;
+    }
+
+.media-list {
+    padding-right: 0;
+}
+
+.list-group {
+    padding-right: 0;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+    right: 0;
+}
+
+.close {
+    float: left;
+}
+
+.tooltip {
+    text-align: right;
+}
+
+    .tooltip.tooltip-top .tooltip-arrow,
+    .tooltip.bs-tether-element-attached-bottom .tooltip-arrow {
+        right: 50%;
+        margin-right: -5px;
+    }
+
+    .tooltip.tooltip-bottom .tooltip-arrow,
+    .tooltip.bs-tether-element-attached-top .tooltip-arrow {
+        right: 50%;
+        margin-right: -5px;
+    }
+
+.popover {
+    right: 0;
+    text-align: right;
+}
+
+    .popover.popover-top .popover-arrow,
+    .popover.bs-tether-element-attached-bottom .popover-arrow {
+        right: 50%;
+        margin-right: -11px;
+    }
+
+        .popover.popover-top .popover-arrow::after,
+        .popover.bs-tether-element-attached-bottom .popover-arrow::after {
+            margin-right: -10px;
+        }
+
+    .popover.popover-bottom .popover-arrow,
+    .popover.bs-tether-element-attached-top .popover-arrow {
+        right: 50%;
+        margin-right: -11px;
+    }
+
+        .popover.popover-bottom .popover-arrow::after,
+        .popover.bs-tether-element-attached-top .popover-arrow::after {
+            margin-right: -10px;
+        }
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner > .carousel-item.next,
+    .carousel-inner > .carousel-item.active.right {
+        right: 0;
+    }
+
+    .carousel-inner > .carousel-item.prev,
+    .carousel-inner > .carousel-item.active.left {
+        right: 0;
+    }
+
+        .carousel-inner > .carousel-item.next.left,
+        .carousel-inner > .carousel-item.prev.right,
+        .carousel-inner > .carousel-item.active {
+            right: 0;
+        }
+}
+
+.carousel-inner > .active {
+    right: 0;
+}
+
+.carousel-inner > .next {
+    right: 100%;
+}
+
+.carousel-inner > .prev {
+    right: -100%;
+}
+
+    .carousel-inner > .next.left,
+    .carousel-inner > .prev.right {
+        right: 0;
+    }
+
+.carousel-inner > .active.left {
+    right: -100%;
+}
+
+.carousel-inner > .active.right {
+    right: 100%;
+}
+
+/*.carousel-control {
+  right: 0;
+}
+
+.carousel-control.right {
+  left: 0;
+  right: auto;
+}*/
+
+.carousel-control .icon-prev {
+    right: 50%;
+    margin-right: -10px;
+}
+
+.carousel-control .icon-next {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.carousel-indicators {
+    right: 50%;
+    padding-right: 0;
+    margin-right: -30%;
+}
+
+.carousel-caption {
+    left: 15%;
+    right: 15%;
+    z-index: 10;
+}
+
+@media (min-width: 544px) {
+    .carousel-control .icon-prev {
+        margin-right: -15px;
+    }
+
+    .carousel-control .icon-next {
+        margin-left: -15px;
+    }
+
+    .carousel-caption {
+        left: 20%;
+        right: 20%;
+    }
+}
+
+
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+  overflow-x: hidden;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-right: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 250px;
+  width: 0;
+  height: 100%;
+  margin-right: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: 0px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-right: 250px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+</style>
+<body>  
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+            
+            
+            <nav class="navbar navbar-expand navbar-dark bg-primary"> <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarsExample02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item" id="logout"> <a class="nav-link" href="#">Logout</a> </li>
+                    </ul>
+                    <form class="form-inline my-2 my-md-0"> </form>
+                </div>
+            </nav>
+            <div id="wrapper" class="toggled">
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper"><br><br><br><br><br><br>
+                    <ul class="sidebar-nav">
+                        <!-- <li class="sidebar-brand"><a href="#" class="modal-trigger" data-target="myModal"> Profile <i class="fa fa-user-circle-o pl-0 text-warning fa-fw"></i> </a> 
+                       </li> -->
+                       <li>
+                        <a href="#" class="grey-text modal-trigger" data-target="myModal">Profile</a>
+                      </li>
+                       <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                          
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Unauhtorised User</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              You need to sign up to access the notifications and<br> updates of clubs and student chapters.
+                            </div>
+                            
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Ok</button>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                     
+
+                       
+                      
+                        <li>  <a href="#">My Subscriptions <i class="fa fa-address-card text-warning fa-fw"></i></a> </li>
+                        <li> <a href="#">Edit Subscriptions <i class="fa fa-cubes mr-3 text-warning fa-fw"></i></a> </li>
+                       
+
+                        <li> <a href="mailto:a0000000j000@gmail.com">Contact <i class="fa fa-envelope mr-3 text-warning fa-fw"></i></a> </li><br><br><br><br><br><br><br><br><br>
+                        <li> <a href="#" id="logout2">Logout <i class="fa fa-sign-out mr-0 text-warning fa-fw"></i>
+                        </a> </li>
+                    </ul>
+                </div> <!-- /#sidebar-wrapper -->
+                <!-- Page Content -->
+                <div id="page-content-wrapper">
+                    <div class="container-fluid"><br><br><br><br>
+                        <h1> ! Welcome User</h1>
+                       <p>Here are the posts related to your subscriptions</p> 
+                    </div><br><br>
+<div id="posts" >
+    <div class="roboism">
+    <div class="fb-post" data-href="https://www.facebook.com/roboism/photos/a.407201956011086/2841093615955229/?type=3&amp;__xts__%5B0%5D=68.ARBSvcvXcEXg6erceClvO9eQEhqvZSPc9q3MQEFli__Cr8oZetwOFhUaFYSom2EEdSMS8BXql0A_66WB17SrOzn6RMiAiSBINSyGTWm2E4wJANceYHgUYTT_BZ6it-acjtNpkAkF-jqSnqIuFjo2B49mRx_Nu1SzRxYAYOGNN6HvRn26OmQYoyg_bh0WWBBPj1SVF0qkUuyS-yZYZwpyMceNn_yN_ug5LP7a2_b-1kwp7P37ecQpIFzUpG3g0dnFYC9lia4x0jXqdADx7xAwI22IM7vjUZr9N7xVmSGvlqzsma6-ny1Zd63xaL2ha31vVH2yEbL_GvOYNtdHki9aikCiAw&amp;__tn__=-R" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/roboism/photos/a.407201956011086/2841093615955229/?type=3" class="fb-xfbml-parse-ignore"><p style="color: blanchedalmond">RoboISM congratulates Animesh Agrawal Sir of B.Tech In Mineral engineering for getting placed at Flick2Know Technologies...</p>Posted by <a href="https://www.facebook.com/roboism/">Robotics and AI Club - IIT Dhanbad</a> on&nbsp;<a href="https://developers.facebook.com/roboism/photos/a.407201956011086/2841093615955229/?type=3">Saturday, 4 January 2020</a></blockquote></div>
+
+<br>
+<div class="fb-post" data-href="https://www.facebook.com/roboism/photos/a.407201956011086/2841087992622458/?type=3&amp;__xts__%5B0%5D=68.ARDOBGzTRiwvpOT0aefZL3-AVqZdxEANcOPqJNgD_xJ7Nym6ZywGIXqxbF2riQCqQAFxtTDmXipyGUvO4PbsQr-ekkJWTXv_Ux51OYYqNRZDmL5YWGfhpdZvqXPKzH2UEG-4wnzUesafFj19viBpeIBAFApQ46TWORfoN9youMnzE6M-G87IgDXRnZwCi_9xu0T9eLSc89z6_1FAclXJEeSrwAey9Each2D9R3zzf0w5hXv9xtU91uQQGdMiDmUOCBTNvTlga2mlsVYsiIRPQ_GsjRqcZMHcHm27tqlPfOlZgMs_PnPH1BPJk8xgvS1dleOcJ83f3_tAV15Ac3fbeVeCnA&amp;__tn__=-R" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/roboism/photos/a.407201956011086/2841087992622458/?type=3" class="fb-xfbml-parse-ignore"><p>RoboISM congratulates Muddasar Raza Sir of B.tech in Electronics and Communication engineering for getting placed at...</p>Posted by <a href="https://www.facebook.com/roboism/">Robotics and AI Club - IIT Dhanbad</a> on&nbsp;<a href="https://developers.facebook.com/roboism/photos/a.407201956011086/2841087992622458/?type=3">Saturday, 4 January 2020</a></blockquote></div>
+<br>
+</div>
+<div class="cyberlabs">
+    <div class="fb-post" data-href="https://p.facebook.com/story.php?story_fbid=2314958265276661&amp;id=631172896988548&amp;refid=52&amp;_ft_=mf_story_key.2314958265276661%3Atop_level_post_id.2314958265276661%3Atl_objid.2314958265276661%3Acontent_owner_id_new.631172896988548%3Athrowback_story_fbid.2314958265276661%3Apage_id.631172896988548%3Astory_location.9%3Apage_insights.%7B%22631172896988548%22%3A%7B%22page_id%22%3A631172896988548%2C%22actor_id%22%3A631172896988548%2C%22dm%22%3A%7B%22isShare%22%3A0%2C%22originalPostOwnerID%22%3A0%7D%2C%22psn%22%3A%22EntStatusCreationStory%22%2C%22post_context%22%3A%7B%22object_fbtype%22%3A266%2C%22publish_time%22%3A1576170248%2C%22story_name%22%3A%22EntStatusCreationStory%22%2C%22story_fbid%22%3A%5B2314958265276661%5D%7D%2C%22role%22%3A1%2C%22sl%22%3A9%2C%22targets%22%3A%5B%7B%22actor_id%22%3A631172896988548%2C%22page_id%22%3A631172896988548%2C%22post_id%22%3A2314958265276661%2C%22role%22%3A1%2C%22share_id%22%3A0%7D%5D%7D%7D&amp;__tn__=-R" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/labscyber/posts/2314958265276661" class="fb-xfbml-parse-ignore"><p>Hello everyone,
+        below are the selections for Winter of Code 2019:
+        
+        * Blogging Website
+            1. Shubham Jamuar (19JE0794)
+         ...</p>Posted by <a href="https://www.facebook.com/labscyber/">Cyber Labs</a> on&nbsp;<a href="https://developers.facebook.com/labscyber/posts/2314958265276661">Thursday, 12 December 2019</a></blockquote></div>
+         <br>
+
+         <div class="fb-post" data-href="https://p.facebook.com/story.php?story_fbid=2361103177328836&amp;id=631172896988548&amp;refid=52&amp;_ft_=mf_story_key.2361103177328836%3Atop_level_post_id.2361103177328836%3Atl_objid.2361103177328836%3Acontent_owner_id_new.631172896988548%3Athrowback_story_fbid.2361103177328836%3Apage_id.631172896988548%3Astory_location.4%3Apage_insights.%7B%22631172896988548%22%3A%7B%22page_id%22%3A631172896988548%2C%22actor_id%22%3A631172896988548%2C%22dm%22%3A%7B%22isShare%22%3A0%2C%22originalPostOwnerID%22%3A0%7D%2C%22psn%22%3A%22EntStatusCreationStory%22%2C%22post_context%22%3A%7B%22object_fbtype%22%3A266%2C%22publish_time%22%3A1578033021%2C%22story_name%22%3A%22EntStatusCreationStory%22%2C%22story_fbid%22%3A%5B2361103177328836%5D%7D%2C%22role%22%3A1%2C%22sl%22%3A4%2C%22targets%22%3A%5B%7B%22actor_id%22%3A631172896988548%2C%22page_id%22%3A631172896988548%2C%22post_id%22%3A2361103177328836%2C%22role%22%3A1%2C%22share_id%22%3A0%7D%5D%7D%7D&amp;__tn__=-R" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/labscyber/posts/2361103177328836" class="fb-xfbml-parse-ignore"><p>Just a quick reminder for the freshers shortlisted for non-technical interview round of Hardware and InfoSec division....</p>Posted by <a href="https://www.facebook.com/labscyber/">Cyber Labs</a> on&nbsp;<a href="https://developers.facebook.com/labscyber/posts/2361103177328836">Thursday, 2 January 2020</a></blockquote></div>
+<br>
+
+</div>
+<div class="fotofreaks">
+    <div class="fb-post" data-href="https://www.facebook.com/fotofreaks.iitism/posts/2797616703666690?__xts__%5B0%5D=68.ARAgCYIWgO3b-qGPiMkt5G0JPWWV5oK_XDbD6LrsUdIRc_KSOKaRDAb88aAB0qaAwaEjSEV53m3oO2pZoC3VsAzCO_P36qynDirEH1x4d3CXnAjbwM4FVar1jtvAiv_PgPsZwcQ1jWWYTz6KIJgqnqCUjNiSSZclnVKc5_WOGyZYlBidtJkgyk8H7wUeFQowKOTv7N3aZ2uxvNgvLw9mvNIbVniJQxYUJhgblSjGjacty_hnXf2w1Jurf-DnP0f6HLPJw3HISCGMybcjeg3qRZpFScUHmMKzPRndJAVHCGy0FN37ySmCow3vXPSAnalvEOEcPmhQ39f0J_us65BaFHcMduA4-FCwx9ZaPD1dmAxoLjPzKl8X3_GmORW3zKbeJYFqml2RDnufIKftt3vx6fEaaAebIGrtHjBiPiimDih0eMbSol7zDE7zhWtrw6vGG1macRQXaVyvUleSjPsm&amp;__tn__=-R" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/fotofreaks.iitism/posts/2797616703666690" class="fb-xfbml-parse-ignore"><p>Our fourth and last album for Online Photography Competition in Inter IIT Cultural meet 4.0, themed &quot;Happiness&quot;....</p>Posted by <a href="https://www.facebook.com/fotofreaks.iitism/">FotoFreaks - The Photography Club Of IIT - ISM</a> on&nbsp;<a href="https://developers.facebook.com/fotofreaks.iitism/posts/2797616703666690">Thursday, 9 January 2020</a></blockquote></div><br>
+
+    <div class="fb-post" data-href="https://www.facebook.com/fotofreaks.iitism/posts/2790335377728156?__xts__%5B0%5D=68.ARAetz4mN3TrQz_4Nng9nQjaA26XwbEiYZHSOt3tG5hzHnK0NFbTzaN0yYquVVZz6k3maYwSShzFxJBEbDHQ3KF9FHAKf8XpvWiW2iOMSLLmV3IXHQNTecGvAhlNUegs4EGKZ2d5dKCKOLOcfP4M-gBGdh7m32Wy2JVYjU1S5ykT4wmiXDcQXz8b84qKiy9zIosR0HAAh6Y5ROA8tdzMI7GFKTbU1pb0JWaIQYcc_5nX-jO8W3e-P9fRw-mUMWWl_YOfYW1V2DUQSCRmeo_YBNYktqGRxL7eRJFFMQHRFhRovZfH-in9gcojStCKqmfuic3esU5CwlpZUSdDmoEa540ERl9yuyH4wL_DTbz_KNjgn_O27I_d9u1cR8pWHv_niifLPgSFIiLvAOayRVa-YwDXoGaKfeD0pkEojB1oNeRuI_yyAwFxox9twEheIYBYmkLF8qdNQiHQ0-WcdCDA&amp;__tn__=-R" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/fotofreaks.iitism/posts/2790335377728156" class="fb-xfbml-parse-ignore"><p>A glimpse of a photowalk held on 5th Jan &#039;20</p>Posted by <a href="https://www.facebook.com/fotofreaks.iitism/">FotoFreaks - The Photography Club Of IIT - ISM</a> on&nbsp;<a href="https://developers.facebook.com/fotofreaks.iitism/posts/2790335377728156">Sunday, 5 January 2020</a></blockquote></div><br>
+</div>
+<div class="arka">
+    <div class="fb-post" data-href="https://www.facebook.com/ARKAiitism/photos/a.1825838770794157/3091771424200879/?type=3&amp;__xts__%5B0%5D=68.ARCv5_uPRBPeP-A9wKxrL1RywAEdjkKL8hp9EcRQkKzuOWXGqLvKd66tKRdBCm1zdoduphrKFgM910pgIbfFDp7FeymO12kdMF5OlBZU3JWx_X5AfJ7cv9x27J96L_m76M0esk7z0Ix9D4_bJXP-M2smhCyBsKWCF8-gEe2MjH0I8XfkoWdUxfMSL-IGvK1_pygS57pLd2csSHYZRHBUonUFu53fS7uPW5NpVUCGNtmzwqPo1d78O2EwhzmlaVe6a6dTrNrNbJUNNuvya_dOwCQmTLgZkFdBQXJyUU1136Wvq4kLwa1eATuMU-ftiBKElDOSo0KN89K4yyRXXEC2SQQEAg&amp;__tn__=-R" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/ARKAiitism/photos/a.1825838770794157/3091771424200879/?type=3" class="fb-xfbml-parse-ignore"><p>In a series of fascinating revelations, ISRO unveiled its plans on Chandrayaan-3. The chairman, K. Sivan, officially...</p>Posted by <a href="https://www.facebook.com/ARKAiitism/">ARKA-Astronomy club,IIT ISM Dhanbad</a> on&nbsp;<a href="https://developers.facebook.com/ARKAiitism/photos/a.1825838770794157/3091771424200879/?type=3">Wednesday, 8 January 2020</a></blockquote></div><br>
+
+    <div class="fb-post" data-href="https://www.facebook.com/ARKAiitism/posts/3058596387518383?__xts__%5B0%5D=68.ARB-ujcRYQ4bP3dMa8v1xuLvA2jNJzKAAIqXlaI-HTw90LXubCxK5Vos2k3jnKUuGD8horA1ecHRkARs-h_aqfw-j038XywXYE34V9ThNqlIXnTk8Cakks3oa3P0ZRu-yNRhOuhD1eLwz6mJsLme7hppL6TUbPEtACKeqRlZ_VGXFmTHniPE5HPxBXgwkLfCY2241XegOJIESaMSXPp3AhojgacuguYcSExp16IJkphsvYCkMkxES5aghE2FAyALTuCtNBoe_izNQlON2LzBiaMJ7Bj_YTRPSY5x3olH_Dj7OA7TITwsHU5jKF9KDQ1zTZQ9UJGcu4FUKOxRWHdAD3hUeA&amp;__tn__=-R" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/ARKAiitism/posts/3058596387518383" class="fb-xfbml-parse-ignore"><p>The third and final solar eclipse of the year shall adorn the Indian skies on 26th December from 8:00 to 11:30 AM IST....</p>Posted by <a href="https://www.facebook.com/ARKAiitism/">ARKA-Astronomy club,IIT ISM Dhanbad</a> on&nbsp;<a href="https://developers.facebook.com/ARKAiitism/posts/3058596387518383">Tuesday, 24 December 2019</a></blockquote></div><br>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div> <!-- /#page-content-wrapper -->
+            </div> <!-- /#wrapper -->
+            <!-- Bootstrap core JavaScript -->
+            <!-- <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>  Menu Toggle Script -->
+            <script>
+              $(function(){
+                $("#menu-toggle").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+    
+                $(window).resize(function(e) {
+                  if($(window).width()<=768){
+                    $("#wrapper").removeClass("toggled");
+                  }else{
+                    $("#wrapper").addClass("toggled");
+                  }
+                });
+              });
+               
+            </script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script> 
+
+
+
+
+            <script src="mai.js"></script>
+       </body>
+      </html> 
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" class="sidebar-brand">
+        Profile <i class="fa fa-user-circle-o pl-0 text-warning fa-fw"></i> 
+      </button> -->
+      <!-- <li><button type="button" class="profile" data-toggle="modal" data-target="#myModal" >
+        Profile <i class="fa fa-user-circle-o pl-0 text-warning fa-fw"></i> 
+      </button></li> -->
